@@ -1,0 +1,44 @@
+
+body{
+  padding: 0px 10px 0px 10px;
+  background: #84b5b1;
+  height: 1000px;
+
+}
+
+.wrapper{
+  background: url('../img/background.jpg');
+
+}
+
+.claim, .reserve{
+  text-align: center;
+  margin-top: 1em;
+}
+
+#claim, #reserve{
+  background: #666;
+  border-color: none;
+}
+
+.input-field{
+   margin-top: 10em;
+}
+
+.res-out{
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+}
+
+.row-res{
+  font-size: 40px;
+   font-family: 'Raleway', sans-serif;
+}
+
+.res-out-left, .res-out-right{
+  list-style: none;
+  text-align: center;
+  padding-top: 4em;
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+}

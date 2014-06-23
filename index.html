@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Restaurant Reservations</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href='http://fonts.googleapis.com/css?family=Raleway:400,900' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <!--Bootstrap-->
+  <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+</head>
+
+
+<body>
+<div class="row wrapper">
+  <div class="col-sm-12">
+    <div class="row input-field">
+      <div class="col-xs-6"><input type="text" class="form-control left" placeholder="Enter a name"></div>
+      <div class="col-xs-6"><input type="text" class="form-control right" placeholder="Enter a name"></div>
+    </div>
+    <div class="row buttons">
+      <div class="col-xs-6 col-md-4 claim"><button id="claim"type="button" class="btn btn-primary btn-lg">Claim a Reservation</button></div>
+      <div class="col-xs-6 col-md-4"></div>
+      <div class="col-xs-6 col-md-4 reserve"><button id="reserve"type="button" class="btn btn-primary btn-lg">Make a Reservation</button></div>
+    </div>
+  </div>
+</div>
+<div class= "row-res">
+  <div class="col-md-4 col-md-offset-4 res-out">RESERVATIONS</div>
+</div>
+<div class="row res-display">
+   <div class="col-xs-6 res-out-left">
+    <span>Claimed Reservations</span>
+     <ul class="put-name-left"></ul>
+   </div>
+   <div class="col-xs-6 res-out-right">
+    <span>New Reservations</span>
+     <ul class="put-name-right"></ul>
+   </div>
+
+
+  </div>
+</div>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+
+<!--
+var reservations = {
+  'Billy': { claimed: false },
+   'd': {claimed: true}
+};
+
+var checkRes = function(name){
+ if(reservations[name]) {
+    if(reservations[name]['claimed'] == false) {
+      reservations[name]['claimed'] = true;
+    }else if(reservations[name]['claimed'] == true){
+      alert(name + " has already claimed this reservation!");
+    }
+  }
+};
+
+var makeRes = function(name){
+  if(!reservations[name]){
+    reservations[name] = {claimed: false};
+    console.log(reservations)
+  }else{
+    newName = prompt("Please use a different name, " + name + " is already taken");
+    reservations[newName] = {claimed: false};
+    console.log('a');
+  }
+};
+
+
+// $('#claim').on('click', function (e) {
+//   e.preventDefault();
+//   var name = $(".form-control.left").val();
+//   checkRes(name);
+// });
+
+// $('#reserve').on('click', function (e) {
+//   e.preventDefault();
+//   var name = $(".form-control.right").val();
+//   makeRes(name);
+// });
+ -->
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script type="text/javascript" src="js/business-logic.js"></script>
+<script type="text/javascript" src="js/presentation.js"></script>
+
+</body>
+</html>

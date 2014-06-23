@@ -1,0 +1,27 @@
+(function() {
+  var BusinessLogic = function(){
+
+     this.reservations = {
+      'Billy': { claimed: false }
+      , 'd': {claimed: true}
+    };
+
+      this.checkRes = function(name){
+        for (var key in reservations) {
+         if (reservations.hasOwnProperty(key)) {
+            var obj = reservations[key];
+            for (var prop in obj) {
+               if (obj.hasOwnProperty(prop) === false) {
+                  console.log("The reservation has not been taken")
+               }else if(obj.hasOwnProperty(prop) === true){
+                  console.log("That reservation has been taken.")
+               }else{
+                  console.log("There is no reservation under that name")
+               }
+            }
+         }
+      }
+
+    };
+   window.bl = new BusinessLogic();
+  })();
